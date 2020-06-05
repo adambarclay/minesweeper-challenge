@@ -1,9 +1,11 @@
 # Minesweeper Challenge
 
 **Brief**
+
 Write a game which follows the rules of “minesweeper” (see below). This should display the board to the user in the Windows console and give the player the chance to choose a location to “sweep”.
 
 **Summary**
+
 In Minesweeper, the objective is to find mines hidden on a board. The computer game will generate a board (in our case 8x8) and randomly place 8 mines somewhere on the board.
 
 The player progressively reveals the board by “sweeping” a location. When the player does this, they are informed of the number of mines surrounding the selected location. For our game we will use the following key:
@@ -26,11 +28,13 @@ Below is an example of a fully explored board:
 				0 0 0 0 0 0 0 0
 
 **Rules to generate the above**
+
 - Where we see “2” this indicates there are 2 mines surrounding that location.
 - Where we see “1” this indicates there is 1 mine surrounding to that location.
 - Where we see “0” this indicates there are no surrounding mines, so every adjacent location is safe.
 
 **Objective**
+
 Write a console app which will:
 - Construct an 8 x 8 board with 8 randomly distributed mines. Keep this hidden from the player.
 - Via the console print out the 8 x 8 board to the player using an asterisk (\*) to indicate a hidden location. At the start all locations are hidden. Make sure to show the player the number of adjacent mines for the squares they have already revealed. The grid should have row and column identifiers *(see example sequence below)*.
@@ -43,6 +47,7 @@ Write a console app which will:
     - Print out the entire board and end the program. *(note: if the player is unlucky, this could be their first turn!)*
 
 **Example Sequence**
+
 For the following example assume the board hidden from the player is:
 
 				m 1 0 0 0 0 0 0
